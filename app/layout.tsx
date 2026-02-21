@@ -1,0 +1,59 @@
+import type { Metadata } from 'next';
+import { Cormorant_Garamond, Jost } from 'next/font/google';
+import './globals.css';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+
+const cormorant = Cormorant_Garamond({
+  variable: '--font-cormorant',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
+
+const jost = Jost({
+  variable: '--font-jost',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  title: 'Abul Fazl Islamic Institute | Online Quran & Islamic Studies with Certified Aalim & Aalima',
+  description: 'Learn Quran, Tajweed, Hifz, and Islamic Studies online with seminary-educated Aalim & Aalima scholars. Serving families in the UK, USA, Canada & Australia. Book your free trial today.',
+  keywords: [
+    'online Quran classes',
+    'Aalim tutor',
+    'Aalima teacher',
+    'learn Quran online UK',
+    'online Quran classes for kids',
+    'Tajweed classes',
+    'Hifz online',
+    'Islamic studies online',
+    'Quran memorization',
+    'Tafseer classes',
+  ],
+  authors: [{ name: 'Abul Fazl Islamic Institute' }],
+  openGraph: {
+    title: 'Abul Fazl Islamic Institute | Learn from Qualified Scholars',
+    description: 'Seminary-educated Aalim & Aalima tutors teaching Quran and Islamic Studies online',
+    type: 'website',
+    locale: 'en_US',
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
+      <body className="antialiased">
+        <Navbar />
+        <main className="min-h-screen pt-20">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
