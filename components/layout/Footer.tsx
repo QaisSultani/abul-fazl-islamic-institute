@@ -79,17 +79,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-gray-300">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
-                <span>
-                  {/* TODO: Owner to replace with real WhatsApp number */}
-                  +[WhatsApp Number]
-                </span>
+                <span>+923408863174</span>
               </li>
               <li className="flex items-start gap-2 text-sm text-gray-300">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" />
-                <span>
-                  {/* TODO: Owner to replace with real email */}
-                  info@abulfazl.org
-                </span>
+                <span>abulfazl.institute@gmail.com</span>
               </li>
             </ul>
 
@@ -124,7 +118,7 @@ export default function Footer() {
       <div className="border-t border-emerald-mid">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-center text-sm text-gray-400">
-            © 2025 Abul Fazl Islamic Institute. All rights reserved.
+            © {new Date().getFullYear()} Abul Fazl Islamic Institute. All rights reserved.
           </p>
         </div>
       </div>

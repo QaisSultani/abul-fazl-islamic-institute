@@ -64,8 +64,8 @@ export default function Hero() {
               <div className="text-sm text-gray-300">Qualified Scholars</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-gold-light mb-1">3</div>
-              <div className="text-sm text-gray-300">Countries Served</div>
+              <div className="text-4xl font-bold text-gold-light mb-1">24/7</div>
+              <div className="text-sm text-gray-300">Worldwide Access</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gold-light mb-1">Free</div>

@@ -1,6 +1,6 @@
 # Abul Fazl Islamic Institute - Marketing Website
 
-A modern, professional marketing website for Abul Fazl Islamic Institute - an online Islamic education platform featuring seminary-educated Aalim and Aalima tutors.
+A modern, professional marketing website for Abul Fazl Islamic Institute - an online Islamic education platform featuring seminary-educated Aalim and Aalima tutors serving students worldwide.
 
 ## 🚀 Quick Start
 
@@ -67,8 +67,8 @@ Visit [http://localhost:3000](http://localhost:3000) to view the website.
 - Create the `public/tutors/` directory and add photos
 
 **Contact Information** (`components/layout/Footer.tsx` and `app/contact/page.tsx`):
-- [ ] Replace `+[WhatsApp Number]` with real WhatsApp number (with country code)
-- [ ] Replace `info@abulfazl.org` with real email address
+- [x] Replace `+[WhatsApp Number]` with real WhatsApp number (with country code)
+- [x] Replace `info@abulfazl.org` with real email address
 
 **Social Media** (`components/layout/Footer.tsx`):
 - [ ] Add real Facebook page URL (or remove if not applicable)

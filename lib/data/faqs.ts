@@ -58,7 +58,7 @@ export const faqs: FAQ[] = [
   {
     id: 'payment-methods',
     question: 'What payment methods do you accept?',
-    answer: 'We accept PayPal and bank transfer. Payment details will be shared once you enroll. Contact us to arrange payment.',
+    answer: 'We accept Payoneer and bank transfer. Payment details will be shared once you enroll. Contact us to arrange payment.',
     category: 'pricing',
   },
   {

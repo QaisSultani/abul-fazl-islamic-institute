@@ -67,7 +67,7 @@ export const pricingNotes = {
       'Two children can share a class at single student rate',
     ],
   },
-  paymentMethods: 'We accept PayPal and bank transfer. Contact us to arrange payment.',
+  paymentMethods: 'We accept Payoneer and bank transfer. Contact us to arrange payment.',
   refundPolicy: 'If not satisfied after the first paid class, we offer a full refund.',
   noContracts: 'No contracts — cancel anytime with no penalty.',
 };

@@ -83,6 +83,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-2 text-base font-medium transition-colors duration-200 ${
                     pathname === link.href
                       ? 'text-gold'
@@ -92,9 +93,11 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Button href="/contact" variant="primary" size="md" className="w-full">
-                Book Free Trial
-              </Button>
+              <div onClick={() => setIsMobileMenuOpen(false)}>
+                <Button href="/contact" variant="primary" size="md" className="w-full">
+                  Book Free Trial
+                </Button>
+              </div>
             </div>
           </motion.div>
         )}

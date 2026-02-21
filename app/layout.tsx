@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Jost } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
 
 const cormorant = Cormorant_Garamond({
   variable: '--font-cormorant',
@@ -20,7 +21,7 @@ const jost = Jost({
 
 export const metadata: Metadata = {
   title: 'Abul Fazl Islamic Institute | Online Quran & Islamic Studies with Certified Aalim & Aalima',
-  description: 'Learn Quran, Tajweed, Hifz, and Islamic Studies online with seminary-educated Aalim & Aalima scholars. Serving families in the UK, USA, Canada & Australia. Book your free trial today.',
+  description: 'Learn Quran, Tajweed, Hifz, and Islamic Studies online with seminary-educated Aalim & Aalima scholars. Serving Muslim families worldwide with flexible scheduling across all time zones. Book your free trial today.',
   keywords: [
     'online Quran classes',
     'Aalim tutor',
@@ -32,6 +33,10 @@ export const metadata: Metadata = {
     'Islamic studies online',
     'Quran memorization',
     'Tafseer classes',
+    'online Quran teacher worldwide',
+    'international Quran classes',
+    'learn Quran from anywhere',
+    'global Islamic education',
   ],
   authors: [{ name: 'Abul Fazl Islamic Institute' }],
   metadataBase: new URL('https://abulfazl.org'),
@@ -64,6 +69,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen pt-20">{children}</main>
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

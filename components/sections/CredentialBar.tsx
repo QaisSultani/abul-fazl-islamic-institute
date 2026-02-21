@@ -16,8 +16,8 @@ const credentials = [
   },
   {
     icon: Globe,
-    title: 'Serving UK, USA, Canada & Australia',
-    description: 'Global online education',
+    title: 'Serving Muslim Families Globally',
+    description: 'Online classes across all time zones',
   },
   {
     icon: CheckCircle,

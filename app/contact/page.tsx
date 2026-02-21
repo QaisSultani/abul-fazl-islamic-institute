@@ -154,10 +154,20 @@ export default function ContactPage() {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-gold focus:ring-2 focus:ring-gold-pale outline-none transition-colors"
                 >
                   <option value="">Select a country</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Canada">Canada</option>
+                  <option value="France">France</option>
+                  <option value="Germany">Germany</option>
+                  <option value="India">India</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="UAE">United Arab Emirates</option>
                   <option value="UK">United Kingdom</option>
                   <option value="USA">United States</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Australia">Australia</option>
                   <option value="Other">Other</option>
                 </select>
                 {errors.country && (
@@ -333,7 +343,7 @@ export default function ContactPage() {
             Prefer to chat directly? Send us a message and we&apos;ll get back to you right away.
           </p>
           <a
-            href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+            href="https://wa.me/923408863174"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-3 text-base font-medium rounded-lg bg-green-500 text-white hover:bg-green-600 shadow-md hover:shadow-lg transition-all duration-200"
@@ -342,8 +352,7 @@ export default function ContactPage() {
             Message on WhatsApp
           </a>
           <p className="mt-4 text-sm text-text-light">
-            {/* TODO: Owner to replace with real WhatsApp number */}
-            WhatsApp: +[Your WhatsApp Number]
+            WhatsApp: +923408863174
           </p>
         </div>
       </section>
