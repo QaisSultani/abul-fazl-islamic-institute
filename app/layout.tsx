@@ -34,11 +34,22 @@ export const metadata: Metadata = {
     'Tafseer classes',
   ],
   authors: [{ name: 'Abul Fazl Islamic Institute' }],
+  metadataBase: new URL('https://abulfazl.org'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Abul Fazl Islamic Institute | Learn from Qualified Scholars',
     description: 'Seminary-educated Aalim & Aalima tutors teaching Quran and Islamic Studies online',
+    url: 'https://abulfazl.org',
+    siteName: 'Abul Fazl Islamic Institute',
     type: 'website',
     locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Abul Fazl Islamic Institute | Learn from Qualified Scholars',
+    description: 'Seminary-educated Aalim & Aalima tutors teaching Quran and Islamic Studies online',
   },
 };
 

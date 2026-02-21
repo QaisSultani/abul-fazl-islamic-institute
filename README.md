@@ -91,14 +91,14 @@ Visit [http://localhost:3000](http://localhost:3000) to view the website.
 
 ### 3. Domain & Deployment
 
-**Recommended Domain**: `abulfazl.org`
-- Alternatives: `abulfazliinstitute.org` or `abulfazlinstitute.org`
+**Domain**: `abulfazl.org` ✅
 
 **Deployment** (Recommended: Vercel):
 1. Push code to GitHub
 2. Connect repository to Vercel ([vercel.com](https://vercel.com))
 3. Deploy with one click
-4. Connect custom domain in Vercel settings
+4. Connect domain `abulfazl.org` in Vercel settings
+5. Configure DNS records as instructed by Vercel
 
 ### 4. Logo (Optional)
 
@@ -243,10 +243,11 @@ For questions or issues:
 - [ ] Test on mobile, tablet, and desktop
 - [ ] Check all pages load correctly
 - [ ] Verify WhatsApp links work
-- [ ] Set up custom domain
+- [x] Set up custom domain (abulfazl.org)
 - [ ] Deploy to Vercel
+- [x] Configure sitemap (sitemap.xml auto-generated)
 - [ ] Set up Google Analytics (optional)
-- [ ] Submit sitemap to Google Search Console
+- [ ] Submit sitemap to Google Search Console after deployment
 
 ---
 
