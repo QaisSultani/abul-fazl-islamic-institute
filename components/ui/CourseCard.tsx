@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import * as LucideIcons from 'lucide-react';
 import Button from './Button';
 import { Course } from '@/lib/data/courses';
@@ -8,11 +9,19 @@ import { Course } from '@/lib/data/courses';
 interface CourseCardProps {
   course: Course;
   detailed?: boolean;
+  clickable?: boolean;
 }
 
-export default function CourseCard({ course, detailed = false }: CourseCardProps) {
+export default function CourseCard({ course, detailed = false, clickable = false }: CourseCardProps) {
+  const router = useRouter();
   // Dynamically get the icon component
   const IconComponent = (LucideIcons as any)[course.icon] || LucideIcons.BookOpen;
+
+  const handleCardClick = () => {
+    if (clickable) {
+      router.push(`/courses#${course.id}`);
+    }
+  };
 
   return (
     <motion.div
@@ -20,7 +29,11 @@ export default function CourseCard({ course, detailed = false }: CourseCardProps
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 border border-cream flex flex-col h-full"
+      id={detailed ? course.id : undefined}
+      onClick={handleCardClick}
+      className={`bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-cream flex flex-col h-full ${
+        clickable ? 'cursor-pointer hover:scale-[1.02]' : ''
+      }`}
     >
       <div className="flex items-start gap-4">
         <div className="shrink-0 w-12 h-12 rounded-lg bg-gold-pale flex items-center justify-center">
@@ -80,9 +93,11 @@ export default function CourseCard({ course, detailed = false }: CourseCardProps
         )}
       </div>
 
-      <Button href="/contact" variant="primary" size="sm" className="w-full mt-4">
-        Book Free Trial
-      </Button>
+      <div onClick={(e) => e.stopPropagation()}>
+        <Button href="/contact" variant="primary" size="sm" className="w-full mt-4">
+          Book Free Trial
+        </Button>
+      </div>
     </motion.div>
   );
 }

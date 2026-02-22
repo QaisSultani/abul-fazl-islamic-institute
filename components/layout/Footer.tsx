@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Logo and tagline */}
           <div>
-            <div className="mb-4">
+            <Link href="/" className="inline-block mb-4">
               <h2 className="text-2xl font-bold mb-1">Abul Fazl</h2>
               <p className="text-sm text-gold-light">Islamic Institute</p>
-            </div>
+            </Link>
             <p className="text-sm text-gray-300 leading-relaxed">
               Seminary-educated scholars. Online. Accessible. Trusted.
             </p>
@@ -61,7 +61,7 @@ export default function Footer() {
               {courses.slice(0, 5).map((course) => (
                 <li key={course.id}>
                   <Link
-                    href="/courses"
+                    href={`/courses#${course.id}`}
                     className="text-sm text-gray-300 hover:text-gold-light transition-colors"
                   >
                     {course.name}
