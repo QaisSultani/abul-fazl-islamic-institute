@@ -72,7 +72,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view the website.
 
 **Social Media** (`components/layout/Footer.tsx`):
 - [x] Add real Facebook page URL (https://www.facebook.com/abul.fazl.islamic.institute/)
-- [x] Add real Instagram handle URL (https://www.instagram.com/abul_fazl_islamic_institute/)
+- [x] Add real Instagram handle URL (https://www.instagram.com/abul.fazl.islamic.institute/)
 
 **Testimonials** (`lib/data/testimonials.ts`):
 - [ ] Replace placeholder testimonials with real student/parent reviews

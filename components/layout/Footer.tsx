@@ -103,7 +103,7 @@ export default function Footer() {
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://www.instagram.com/abul_fazl_islamic_institute/"
+                  href="https://www.instagram.com/abul.fazl.islamic.institute/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full bg-emerald-mid hover:bg-gold transition-colors flex items-center justify-center"
