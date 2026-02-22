@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
+import CustomScrollbar from '@/components/ui/CustomScrollbar';
 
 const cormorant = Cormorant_Garamond({
   variable: '--font-cormorant',
@@ -70,6 +71,7 @@ export default function RootLayout({
         <main className="min-h-screen pt-20">{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <CustomScrollbar />
       </body>
     </html>
   );

@@ -71,8 +71,8 @@ Visit [http://localhost:3000](http://localhost:3000) to view the website.
 - [x] Replace `info@abulfazl.org` with real email address
 
 **Social Media** (`components/layout/Footer.tsx`):
-- [ ] Add real Facebook page URL (or remove if not applicable)
-- [ ] Add real Instagram handle URL (or remove if not applicable)
+- [x] Add real Facebook page URL (https://www.facebook.com/abul.fazl.islamic.institute/)
+- [x] Add real Instagram handle URL (https://www.instagram.com/abul_fazl_islamic_institute/)
 
 **Testimonials** (`lib/data/testimonials.ts`):
 - [ ] Replace placeholder testimonials with real student/parent reviews

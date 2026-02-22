@@ -56,20 +56,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-emerald-dark);
 }
 
-/* Custom scrollbar (optional, modern touch) */
+/* Hide default browser scrollbar - we'll use a custom one */
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-cream);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-emerald-mid);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-emerald-dark);
+  display: none; /* Chrome, Safari, Edge */
 }

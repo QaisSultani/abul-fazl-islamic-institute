@@ -47,7 +47,7 @@ export default function Hero() {
             <Button href="/contact" variant="primary" size="lg">
               Book Free Trial Class
             </Button>
-            <Button href="/courses" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-emerald-dark">
+            <Button href="/courses" variant="outline" size="lg" className="border-white! text-white! hover:bg-white! hover:text-gold!">
               Explore Courses
             </Button>
           </div>

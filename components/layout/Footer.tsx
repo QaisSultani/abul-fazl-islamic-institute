@@ -87,22 +87,25 @@ export default function Footer() {
               </li>
             </ul>
 
-            {/* Social Media - placeholders */}
+            {/* Social Media */}
             <div className="mt-6">
               <p className="text-sm font-medium mb-3 text-gold-light">
                 Follow Us
               </p>
               <div className="flex gap-3">
-                {/* TODO: Owner to add real social media links */}
                 <a
-                  href="#"
+                  href="https://www.facebook.com/abul.fazl.islamic.institute/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full bg-emerald-mid hover:bg-gold transition-colors flex items-center justify-center"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/abul_fazl_islamic_institute/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full bg-emerald-mid hover:bg-gold transition-colors flex items-center justify-center"
                   aria-label="Instagram"
                 >
